@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a66368ab-9d8c-4c95-95ab-ddce41ff2a0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/java/com/zyadeh/kamel/command/impl/SearchNewsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/java/com/zyadeh/kamel/command/impl/SelectedNewsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/webapp/statics/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/java/com/zyadeh/kamel/command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/java/com/zyadeh/kamel/command/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/java/com/zyadeh/kamel/dao/connection/ConnectionBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/java/com/zyadeh/kamel/dao/connection/ConnectionBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/webapp/pages/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/webapp/pages/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/webapp/statics/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../com.zyadeh.kamel.news/servlet/src/main/webapp/statics/news.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1gontoCFDnHGK1zjth05tWmuDnp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a66368ab-9d8c-4c95-95ab-ddce41ff2a0f" name="Default Changelist" comment="" />
+      <created>1598790029683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598790029683</updated>
+      <workItem from="1598790030903" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

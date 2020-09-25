@@ -1,0 +1,250 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: url("/pages/test/test.jpg") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 222;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.sticky_nav_bar {
+    padding: 8px 0;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.4);
+    transition: white;
+    background: linear-gradient(transparent, #f5f5f5);
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0;
+}
+
+#logo {
+    max-width: 100px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+}
+
+.navigator ul {
+    display: flex;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.item {
+    width: fit-content;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.item:hover {
+    color: red;
+}
+
+.buy-now-btn {
+    color: white;
+    border: white;
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+    height: 25px;
+    width: 80px;
+    align-content: center;
+    display: flex;
+}
+
+.buy-now-text{
+    font-size: small;
+    margin: auto;
+}
+
+.flag {
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    background-color: #f5f5f5;
+    width: 100%;
+    color: black;
+    font-size: 18px;
+}
+
+.flag .fronter {
+    width: 40%;
+    padding: 0 0 100px 80px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    outline: 0;
+}
+
+span {
+
+}
+
+.fronter h1 {
+    color: black;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px white;
+    font-family: poppins;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+.front {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.front1 {
+    font-size: x-large;
+
+}
+
+.front2 {
+    font-size: large;
+
+}
+
+.front3 a {
+    color: white;
+    border: white;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.divider_div {
+    height: 75px;
+    background-color: #737373;
+    align-content: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.divider{
+    color: white;
+    margin: auto;
+    font-size: large;
+}
+
+.text-center {
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 70px;
+    display: block;
+}
+
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.h2 strong{
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+ul.Demo_Pics{
+    padding: 10px 0 0;
+    margin: 0 -25px;
+        list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    /*width: 120px;*/
+    /*height: 120px;*/
+}
+
+ ul.Demo_Pics li.demo{
+     padding: 0 25px;
+     /*max-width: 100%;*/
+     width: 25%;
+     box-sizing: border-box;
+     margin-bottom: 40px;
+     float: left;
+     position: relative;
+ }
+
+ ul.Demo_Pics li.demo :hover {
+     opacity: 0.8;
+ }
+
+ .footer_container {
+     background: url("pages/test/buy-now-bg.jpg");
+     color: white;
+     padding: 100px 0 20px;
+     text-align: center;
+ }
+
+ .footer_container h2 {
+     color: white;
+     font-weight: 700;
+     margin-bottom: 10px;
+ }
+
+ .footer_sector_title {
+     font-size: 48px;
+     line-height: 1.2;
+ }
+
+ .text {
+     margin-bottom: 40px;
+ }
+
+ .button_border{
+
+     color: white;
+     border: white;
+     /*border-radius: 10px;*/
+     background-color: black;
+     margin: auto;
+     height: 50px;
+     width: 160px;
+     align-content: center;
+     display: flex;
+
+ }
+ .btn_buy_now {
+     font-weight: bold;
+     text-transform: uppercase;
+     color: white;
+     margin: auto;
+     text-decoration: none;
+ }
+
+ .btn_buy_now :hover {
+     background-color:  red;
+
+ }

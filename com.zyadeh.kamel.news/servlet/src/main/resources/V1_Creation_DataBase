@@ -1,0 +1,41 @@
+  CREATE TABLE users (
+  id bigserial primary key,
+  name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  login VARCHAR(50) NOT NULL,
+  password VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL
+  );
+
+  CREATE TABLE roles (
+  id bigint REFERENCES users(id),
+  role VARCHAR(20) NOT NULL
+  );
+
+  CREATE TABLE authors (
+  id bigserial primary key,
+  name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL
+  );
+
+  CREATE TABLE news (
+  id bigserial primary key,
+  title VARCHAR(50) NOT NULL,
+  short_text VARCHAR(100) NOT NULL,
+  full_text VARCHAR(1000) NOT NULL,
+  published_in DATE NOT NULL DEFAULT CURRENT_DATE,
+  created_in DATE NOT NULL DEFAULT CURRENT_DATE,
+  author_id bigint REFERENCES authors(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE tags (
+  id bigserial primary key,
+  name VARCHAR (50) NOT NULL,
+  news_id bigint REFERENCES news(id) ON DELETE CASCADE
+  );
+
+  CREATE TABLE imgs (
+  id bigserial primary key,
+  url VARCHAR (2000) NOT NULL,
+  news_id bigint REFERENCES news(id) ON DELETE CASCADE
+  );

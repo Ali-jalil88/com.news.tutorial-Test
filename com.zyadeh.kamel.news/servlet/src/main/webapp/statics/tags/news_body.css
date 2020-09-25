@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    width: 100%;
+      background-color: black; 
+}
+
+.news {
+    height: 100%;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+}
+
+.news-body{
+   margin: auto;
+}
+
+.news a {
+    text-decoration: none;
+    color: black;
+}
+
+.create_div {
+    width: 10%;
+    margin: 0 auto;
+}
+
+a.create {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+/*.news-transition {*/
+    /*border: 1px solid black;*/
+    /*border-radius: 5px;*/
+    /*margin: auto auto 10px;*/
+    /*display: flex;*/
+    /*width: 100%;*/
+
+/*}*/
+
+.news-transition ul {
+    list-style-type: none
+}
+
+.part-1 {
+    width: 50%
+}
+
+.part-2 {
+    width: 50%;
+}
+
+.part-2 ul li {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.part-3 {
+    margin: 16px;
+    width: 200px;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.container-part-3 h3{
+   margin: 16px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     color: #FFFFFF;
+}
+
+.img-wrapper {
+    max-height: 200px;
+    max-width: 200px;
+    background-size: cover;
+}
+
+.img-wrapper img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}

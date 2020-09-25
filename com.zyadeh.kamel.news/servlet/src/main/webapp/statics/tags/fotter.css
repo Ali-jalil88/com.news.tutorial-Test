@@ -1,0 +1,47 @@
+.footer_container {
+    background: url("/pages/test/buy-now-bg.jpg");
+    color: white;
+    padding: 100px 0 20px;
+    text-align: center;
+}
+
+.footer_container h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer_sector_title {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.text {
+    margin-bottom: 40px;
+}
+
+.button_border{
+
+    color: white;
+    border: white;
+    /*border-radius: 10px;*/
+    background-color: black;
+    margin: auto;
+    height: 50px;
+    width: 160px;
+    align-content: center;
+    display: flex;
+
+}
+.btn_buy_now {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+    text-decoration: none;
+}
+
+.btn_buy_now :hover {
+    background-color:  red;
+
+}

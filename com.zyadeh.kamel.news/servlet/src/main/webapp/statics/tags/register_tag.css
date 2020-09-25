@@ -1,0 +1,94 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.flag {
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    background: url("/pages/test/test.jpg") no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+
+.flag .fronter {
+    width: auto;
+    /*! padding: 0 0 100px 80px; */
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    outline: 0;
+}
+
+.fronter #username {
+    justify-self: center;
+    /*! display: grid; */
+    /*! justify-self: center; */
+    /*! margin-left: 383px; */
+    /*! justify-content: center; */
+    /*! margin: auto; */
+    /*! width: 100%; */
+}
+
+.fronter #password {
+    justify-self: center;
+}
+
+span {
+
+}
+
+.fronter h1 {
+    color: black;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px white;
+    font-family: poppins;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+.front {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.front1 {
+    font-size: x-large;
+
+}
+
+.front2 {
+    font-size: large;
+
+}
+
+.front3 a {
+    color: white;
+    border: white;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.divider_div {
+    height: 75px;
+    background-color: #737373;
+    align-content: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.divider{
+    color: white;
+    margin: auto;
+    font-size: large;
+}

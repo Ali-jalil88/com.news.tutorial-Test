@@ -1,0 +1,58 @@
+/*.page {*/
+    /*margin-left: 30px;*/
+/*}*/
+
+/*.texts {*/
+    /*padding: 10px 200px 0 200px;*/
+/*}*/
+
+/*.first_paragraph {*/
+    /*font-size: x-large;*/
+    /*font-family: padmaa-Bold.1.1;*/
+/*}*/
+
+/*.container {*/
+    /*display: flex;*/
+    /*height: auto;*/
+    /*margin-bottom: 50px;*/
+/*}*/
+
+/*.name {*/
+    /*display: grid;*/
+    /*height: 25px;*/
+    /*width: 300px;*/
+    /*border-radius: 0%;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.email {*/
+    /*display: grid;*/
+    /*height: 25px;*/
+    /*width: 300px;*/
+    /*border-radius: 0%;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.subject {*/
+    /*display: grid;*/
+    /*height: 25px;*/
+    /*width: 300px;*/
+    /*border-radius: 0%;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.message {*/
+    /*display: grid;*/
+    /*height: 125px;*/
+    /*width: 800px;*/
+    /*border-radius: 0%;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.send_message {*/
+    /*margin-bottom: 20px;*/
+    /*border-radius: 5px;*/
+    /*height: 35px;*/
+    /*background-color: blue;*/
+    /*color: white;*/
+/*}*/

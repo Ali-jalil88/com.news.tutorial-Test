@@ -1,0 +1,68 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 222;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.sticky_nav_bar {
+    padding: 8px 0;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.4);
+    transition: white;
+    background: linear-gradient(transparent, #f5f5f5);
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0;
+}
+
+.logo_divider {
+    margin-right: 100px;
+}
+
+#logo {
+    display: grid;
+    max-width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.navigator ul {
+    display: flex;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.item {
+    width: fit-content;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.item:hover {
+    color: red;
+}
+
+.buy-now-btn {
+    color: white;
+    border: white;
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+    height: 25px;
+    width: 80px;
+    align-content: center;
+    display: flex;
+}
+
+.buy-now-text{
+    font-size: small;
+    margin: auto;
+}

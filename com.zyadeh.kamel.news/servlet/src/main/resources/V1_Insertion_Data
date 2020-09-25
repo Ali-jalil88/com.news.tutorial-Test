@@ -1,0 +1,355 @@
+INSERT INTO users
+(name, last_name, login, password, email)
+VALUES
+('user', 'first', 'user123', '1234', 'user123@user.com'),
+('admin', 'second', 'admin123', '1234', 'admin123@admin.com');
+
+INSERT INTO roles
+(id, role)
+VALUES
+(1, 'user'),
+(2, 'admin');
+
+
+INSERT INTO authors
+(name, last_name)
+VALUES
+('Abby', 'Martin'),
+('John', 'Smith'),
+('John', 'Oliver'),
+('Stephan', 'Colbert'),
+('Steven', 'Johnson'),
+('Michel', 'Moore'),
+('Adam', 'Stanford'),
+('Samwell', 'Jackson'),
+('Chris', 'Ross'),
+('David', 'Chapelle');
+
+INSERT INTO news
+(title, short_text, full_text, published_in, created_in, author_id)
+VALUES
+(
+'Ronny Jackson',
+'Dr. Jackson, a Republican who was backed by President Trump and based his campaign around their',
+'Dr. Ronny L. Jackson, the former White House physician with no political experience who ran a campaign based on his' ||
+'close relationship with President Trump, won a Republican runoff election for a House seat in Texas on Tuesday night,' ||
+'effectively stamping his ticket to Congress next year. Dr. Jackson’s victory in the 13th Congressional District over' ||
+'Josh Winegarner a lobbyist who had the backing of the cattle industry he represented and the man he’s seeking to' ||
+'replace, was hailed by the Trump campaign as a triumph for the president who endorsed him and for the' ||
+'Trump re-election campaign that propped him up.',
+NOW(),
+NOW(),
+1
+),
+
+(
+'Kansas Congressman Is Charged With Voter Fraud',
+'Three felony charges were filed against Steve Watkins, a Republican',
+'Representative Steve Watkins, Republican of Kansas, was charged with three felonies related to voter fraud on' ||
+'Tuesday, shortly before a televised debate in which he dismissed the accusations involving a municipal election' ||
+'as a political move.The district attorney of Shawnee County, Mike Kagay, charged Mr. Watkins with' ||
+'three felonies: interference with law enforcement by providing false information, voting without being qualified' ||
+'and unlawful advance voting. Mr. Watkins was also charged with failing to notify the state motor vehicle agency of' ||
+'a change of address, a misdemeanor.',
+NOW(),
+NOW(),
+1
+),
+
+(
+'Trump offers denial and delusion',
+'Rarely has a president shown himself to be so unequal to a tragic national emergency',
+'He slammed Biden for his record on crime, trade, China, infrastructure, the economy, the military, and at one' ||
+'point suggested that hundreds of thousands could be dead by now had the former vice president been in charge' ||
+'when the coronavirus struck. Bizarrely, Trump also slammed the presumptive Democratic presidential nominee for' ||
+'his role in the Obama administration''s mobilization against the H1N1 virus, which was far more efficient and' ||
+ 'cost tens of thousands fewer lives than Trump''s missteps over the past few months.',
+NOW(),
+NOW(),
+1
+),
+
+(
+'Artist replaces slave trader statue',
+'last month, Black Lives Matter demonstrators in Bristol',
+'After contacting the woman in the picture, Jen Reid, the artist produced a life-sized sculpture of the moment' ||
+'using black resin. In a press statement released Wednesday he said that the sculpture is an embodiment and ' ||
+'amplification of Jens ideas and experiences, and of the past, present and her hope for a better future.',
+NOW(),
+NOW(),
+2
+),
+
+(
+'Ruth Bader Ginsburg hospitalized',
+'"Justice Ginsburg was admitted to The Johns Hopkins Hospital',
+'"She was initially evaluated at Sibley Memorial Hospital in Washington, D.C. last night after experiencing' ||
+'fever and chills. She underwent an endoscopic procedure at Johns Hopkins this afternoon to clean out a bile' ||
+'duct stent that was placed last August. The Justice is resting comfortably and will stay in the hospital' ||
+'for a few days to receive intravenous antibiotic treatment."',
+NOW(),
+NOW(),
+2
+),
+
+(
+'Naya Rivera died from drowning',
+'The autopsy findings are consistent with a drowning',
+'It was one of the first times an openly lesbian, high school relationship was seen on network television and ' ||
+'Naya understood what Brittana meant to the many young women who were seeing themselves represented on ' ||
+'television for the first time," the statement said."Naya always made sure that Santanas',
+NOW(),
+NOW(),
+2
+),
+
+(
+'New York Times moving some staff out of Hong Kong',
+'Some Times employees in Hong Kong "have faced challenges securing work permits," the paper reported',
+'The new legislation, which came into force on July 1, criminalizes secession, subversion, terrorism, and ' ||
+'collusion with foreign forces. Officials previously said it will affect a tiny handful of Hong Kongers, ' ||
+'while critics pointed to its broad scope and ill-defined offenses as reason for alarm.',
+NOW(),
+NOW(),
+3
+),
+
+(
+'While an internal email',
+'announcement regarding the Times move was sent out overnight, some ',
+'staff at the paper in Hong Kong learned about the situation on Wednesday morning as news of the decision was widely' ||
+'shared on Twitter, before managers were able to address them, a source with knowledge of the announcement said.',
+NOW(),
+NOW(),
+3
+),
+
+(
+'With strong protections',
+'for free speech, close proximity to mainland China, and generous visa',
+'policies, Hong Kong has long been a major media hub in Asia. Multiple outlets base their regional operations in' ||
+'the city, including CNN, Bloomberg, Agence France-Presse (AFP), the Financial Times and the Wall Street Journal.',
+NOW(),
+NOW(),
+3
+),
+
+(
+'Growing chill',
+'The new security law has led to anxiety within the Hong Kong media community,',
+'wing to its sweeping new offenses and undefined proposals for greater "supervision and regulation" of journalists ' ||
+'in the city. Article 4 of the law says',
+NOW(),
+NOW(),
+4
+),
+
+
+(
+'the freedoms of speech',
+'of the press, of publication, of association, of assembly, of procession and of demonstration',
+'will be protected. But it also criminalizes the leaking of "state secrets," a vague term commonly used in China to ' ||
+'a range of issues deemed to be in the national interest and which has been used in the past to imprison ' ||
+'journalists on the mainland. That could deter both journalists and sources from reporting or collaborating ' ||
+'on stories relating to government affairs.',
+NOW(),
+NOW(),
+4
+),
+
+(
+'Officials have denied',
+'that the law is vague and pointed to the protections outlined in it. In ',
+'response to a question from the city''s Foreign Correspondent''s Club earlier this month about whether the ' ||
+'government could guarantee press freedom, Hong Kong leader Carrie Lam said that if "reporters in Hong Kong ' ||
+'can give me a 100% guarantee that they will not commit any ',
+NOW(),
+NOW(),
+4
+),
+
+(
+'Asked about press freedoms by CNN',
+'in a press conference on the law shortly after it was enacted, Lam said',
+'that people would be free to criticize it, including reporters. But, she warned, If there is more if you are ' ||
+'involved in organizing or colluding thats another matter. Its a question of evidence and the law.' ||
+'Of particular concern for many reporters is how a new enforcement committee outlined in the law for managing ' ||
+'the media will operate',
+NOW(),
+NOW(),
+5
+),
+
+(
+'Self-censorship',
+'While the new security law may result in international media leaving the city',
+'or shrinking their operations in Hong Kong, the situation is far more dire for the local press. In its annual ' ||
+'report on press freedom in the city, published last week, the Hong Kong Journalists Association warned that the ' ||
+'already-limited room for free speech, freedom of publication and freedom of the press will be severely shrunk' ||
+'under the law.',
+NOW(),
+NOW(),
+5
+),
+
+(
+'Concerns about the security',
+'law go beyond reporting on protests or proponents Hong Kong independence',
+'In particular, new offenses relating to "state secrets" raised alarm because of the broad way they have been applied' ||
+'in China in the past to stifle reporting on corruption and government misbehavior. The problem is that what' ||
+'constitutes ''state secret'' or intelligence is not defined, but are to be ultimately decided by (Hong Kongs)' ||
+'Chief Executive,',
+NOW(),
+NOW(),
+5
+),
+
+(
+'The reporter',
+'who requested anonymity to talk freely about the law, added that the essence of ',
+'investigative reporting is to reveal wrongdoing committed by the government, its officials or others' ||
+'in positions of power. More often than not, the stories we produce are unfavorable to the governments position' ||
+'they often would disrupt the status quo, and lead to intense public attention, scrutiny, or hatred' ||
+'the last of which is an offense under the law.',
+NOW(),
+NOW(),
+6
+),
+
+(
+'Daniel Lewis Lee executed',
+'Daniel Lewis Lee, a convicted killer, was executed Tuesday morning',
+'in the first federal execution in 17 years after the Supreme Court issued an overnight ruling that it could proceed. ' ||
+'Lee was pronounced dead by the coroner at 8:07 a.m. ET in Terre Haute, Indiana. His last words were "I didnt do it.' ||
+'Ive made a lot of mistakes in my life but Im not a murderer. Youre killing an innocent man, according to a ' ||
+'pool report. The Supreme Court cleared the way for the resumption of the federal death penalty in an unsigned' ||
+'order released after 2 a.m. ET Tuesday.',
+NOW(),
+NOW(),
+6
+),
+
+(
+'The court wiped away a lower court order',
+'temporarily blocking the execution of Lee in a 5-4 vote. Lee, a one-time white supremacist',
+'who killed a family of three, was scheduled to be executed Monday. A federal judge blocked the planned execution of' ||
+'Lee, and three others, citing ongoing challenges to the federal governments lethal injection protocol.' ||
+'Ruth Friedman, Lee''s attorney, said in a statement Tuesday, "It is shameful that the government saw fit to carry' ||
+'out this execution during a pandemic',
+NOW(),
+NOW(),
+7
+),
+
+(
+'It is shameful that the government',
+'saw fit to carry out this execution when counsel for Danny Lee could not be present with him',
+'and when the judges in his case and even the family of his victims urged against it," Friedman said. And it' ||
+'is beyond shameful that the government, in the end, carried out this execution in haste, in the middle of the' ||
+'night, while the country was sleeping. We hope that upon awakening, the country will be as outraged as we are.',
+NOW(),
+NOW(),
+7
+),
+
+(
+'An appeal',
+'seeking to delay the execution that involved family of Lee''s victims',
+'who were concerned about traveling and going to a federal prison during the coronavirus pandemic was also denied' ||
+'by the Supreme Court in an order Tuesday morning. Earlene Peterson whose daughter, granddaughter and son-in-law' ||
+'were tortured, killed and dumped in a lake by Lee and an accomplice',
+NOW(),
+NOW(),
+8
+);
+
+INSERT INTO tags
+(name, news_id)
+VALUES
+('economy', 1),
+('sport', 1),
+('social', 1),
+('protests', 2),
+('civil', 2),
+('law', 2),
+('tech', 3),
+('literature', 3),
+('fashion', 3),
+('psychological', 4),
+('science', 4),
+('physics', 4),
+('biology', 5),
+('chemistry', 5),
+('math', 5),
+('programming', 6),
+('breaking', 6),
+('trending', 6),
+('expedition', 7),
+('archaeology', 7),
+('financial', 7),
+('stocks', 8),
+('celebrity', 8),
+('governmental', 8),
+('football', 9),
+('historic', 9),
+('cooking', 9),
+('games', 10),
+('cars', 10),
+('entertainment', 10),
+('economy1', 11),
+('sport1', 11),
+('social1', 11),
+('protests1', 12),
+('civil1', 12),
+('law1', 12),
+('tech1', 13),
+('literature1', 13),
+('fashion1', 13),
+('psychological1', 14),
+('science1', 14),
+('physics1', 14),
+('biology1', 15),
+('chemistry1', 15),
+('math1', 15),
+('programming1', 16),
+('breaking1', 16),
+('trending1', 16),
+('expedition1', 17),
+('archaeology1', 17),
+('financial1', 17),
+('stocks1', 18),
+('celebrity1', 18),
+('governmental1', 18),
+('football1', 19),
+('historic1', 19),
+('cooking1', 19),
+('games1', 20),
+('cars1', 20),
+('entertainment1', 20);
+
+INSERT INTO imgs
+(url, news_id)
+VALUES
+('https://www.adornthemes.com/wp-content/themes/adorn/avone/images/banner-bg.jpg', 1),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-1.jpg', 1),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-2.jpg', 2),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-22-2.jpg', 2),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-21.jpg', 3),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-4.jpg', 3),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-5.jpg', 4),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-6.jpg', 5),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-7.jpg', 6),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-8.jpg', 7),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-9.jpg', 8),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-11.jpg', 9),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-11.jpg', 10),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-12.jpg', 11),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-13.jpg', 12),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-14.jpg', 13),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-15.jpg', 14),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-16.jpg', 15),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-17.jpg', 16),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-18.jpg', 17),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/growave.jpg', 18),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-19.jpg', 19),
+('https://www.adornthemes.com/wp-content/uploads/2020/06/home-20.jpg', 20);
