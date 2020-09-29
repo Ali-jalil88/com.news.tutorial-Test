@@ -7,13 +7,22 @@ import com.zyadeh.kamel.entities.News;
 import com.zyadeh.kamel.exceptions.DAOException;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.CRUDService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
-
+@Service
 public class NewsService extends CRUDService<News> {
-
-    private NewsDAO newsDAO = new NewsDAO();
-    private AuthorDAO authorDAO = new AuthorDAO();
-
+private NewsDAO newsDAO;
+    @Autowired
+    public NewsService(NewsDAO newsDAO) {
+        this.newsDAO = newsDAO;
+    }
+    private AuthorDAO authorDAO;
+@Autowired
+    public NewsService(AuthorDAO authorDAO) {
+        this.authorDAO = authorDAO;
+    }
     @Override
     public void create(News entity) throws ServiceException {
         try {

@@ -5,14 +5,15 @@ import com.zyadeh.kamel.dev.obj.Page;
 import com.zyadeh.kamel.entities.User;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.impl.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-
+@Component("")
 public class LoginUserCommand implements Command {
-
     private UserService userService;
-
+    @Autowired
     public LoginUserCommand(UserService userService) {
         this.userService = userService;
     }

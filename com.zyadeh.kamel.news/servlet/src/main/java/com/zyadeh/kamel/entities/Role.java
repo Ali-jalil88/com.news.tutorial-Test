@@ -1,11 +1,11 @@
 package com.zyadeh.kamel.entities;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Objects;
-
+@Component
 public class Role extends Entity{
-
     private String role;
-
     public String getRole() {
         return role;
     }
@@ -27,7 +27,9 @@ public class Role extends Entity{
 
         return Objects.hash(super.hashCode(), role);
     }
-
+    public String role(){
+        return "Hello role Bean";
+    }
     @Override
     public String toString() {
         return "Role{" +

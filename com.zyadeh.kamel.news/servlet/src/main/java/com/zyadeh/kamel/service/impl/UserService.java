@@ -8,15 +8,18 @@ import com.zyadeh.kamel.entities.User;
 import com.zyadeh.kamel.exceptions.DAOException;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.CRUDService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
-
+@Service
 public class UserService extends CRUDService<User> {
-
-    private Dao<User> dao = new UserDAO();
-    private Dao<Role> roleDao = new RoleDAO();
-
-
+    private Dao<User> dao;
+    private final Dao<Role> roleDao;
+@Autowired
+    public UserService(Dao<Role> roleDao) {
+        this.roleDao = roleDao;
+    }
     @Override
     public void create(User entity) throws ServiceException {
         try {
@@ -27,7 +30,6 @@ public class UserService extends CRUDService<User> {
             throw new ServiceException("user can't insert");
         }
     }
-
     @Override
     public User read(int id) throws ServiceException {
         try {
@@ -38,7 +40,6 @@ public class UserService extends CRUDService<User> {
             throw new ServiceException("user cant be read");
         }
     }
-
     @Override
     public void update(User entity) throws ServiceException {
         try {

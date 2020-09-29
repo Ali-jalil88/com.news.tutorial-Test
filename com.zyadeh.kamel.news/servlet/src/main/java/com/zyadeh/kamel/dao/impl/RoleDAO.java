@@ -3,6 +3,8 @@ package com.zyadeh.kamel.dao.impl;
 import com.zyadeh.kamel.dao.Dao;
 import com.zyadeh.kamel.entities.Role;
 import com.zyadeh.kamel.exceptions.DAOException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,8 +14,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.zyadeh.kamel.statics.ConstantHolder.*;
-
+@Repository
 public class RoleDAO extends Dao<Role> {
+
+    public RoleDAO(JdbcTemplate connection) {
+        super(connection);
+    }
 
     @Override
     public boolean update(Role entity) throws DAOException {

@@ -7,13 +7,20 @@ import com.zyadeh.kamel.entities.News;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.impl.AuthorService;
 import com.zyadeh.kamel.service.impl.NewsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
 import java.util.Scanner;
-
+@Component("")
 public class NewsCreateCommand implements Command {
-    private final NewsService service = new NewsService();
+    private final NewsService service;
+@Autowired
+    public NewsCreateCommand(NewsService service) {
+        this.service = service;
+    }
+
     @Override
     public Page execute(HttpServletRequest req) throws ServiceException {
         News news = new News();

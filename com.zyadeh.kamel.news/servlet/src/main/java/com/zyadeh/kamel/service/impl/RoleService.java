@@ -7,11 +7,21 @@ import com.zyadeh.kamel.exceptions.DAOException;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.CRUDService;
 import com.zyadeh.kamel.dao.impl.RoleDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class RoleService extends CRUDService<Role> {
 
-    private RoleDAO roleDAO = new RoleDAO();
+    private RoleDAO roleDAO;
+@Autowired
+    public RoleService(RoleDAO roleDAO) {
+        this.roleDAO = roleDAO;
+    }
 
+    public RoleService() {
+
+    }
 
     @Override
     public void create(Role entity) throws ServiceException {

@@ -5,18 +5,18 @@ import com.zyadeh.kamel.dev.obj.Page;
 import com.zyadeh.kamel.entities.News;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.impl.NewsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
-
+@Component("")
 public class SelectedNewsCommand implements Command {
-
+    @Autowired
     public SelectedNewsCommand() {
-
     }
-
     @Override
     public Page execute(HttpServletRequest req) throws ServiceException {
         Page page = new Page("/", true);

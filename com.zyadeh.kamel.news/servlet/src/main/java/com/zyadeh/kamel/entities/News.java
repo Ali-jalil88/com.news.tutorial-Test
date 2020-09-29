@@ -1,12 +1,13 @@
 package com.zyadeh.kamel.entities;
 
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 
-
+@Component
 public class News extends Entity {
-
     private String fullText;
     private String shortText;
     private String title;
@@ -84,7 +85,9 @@ public class News extends Entity {
 
         return Objects.hash(super.hashCode(), fullText, shortText, title, publishedIn, createdIn, author, urls);
     }
-
+    public String news(){
+        return "Hello news Bean";
+    }
     @Override
     public String toString() {
         return "News{" +

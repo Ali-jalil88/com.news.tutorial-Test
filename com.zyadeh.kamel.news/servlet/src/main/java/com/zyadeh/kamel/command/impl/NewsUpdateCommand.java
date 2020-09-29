@@ -6,19 +6,20 @@ import com.zyadeh.kamel.entities.Author;
 import com.zyadeh.kamel.entities.News;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.impl.NewsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-
+@Component("")
 public class NewsUpdateCommand implements Command {
     private NewsService service;
-
+@Autowired
     public NewsUpdateCommand(NewsService newsService) {
         this.service = newsService;
     }
-
     @Override
     public Page execute(HttpServletRequest req) throws ServiceException {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-d");

@@ -6,16 +6,18 @@ import com.zyadeh.kamel.entities.Author;
 import com.zyadeh.kamel.entities.News;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.impl.NewsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-
+@Component("")
 public class CreateNewsCommand implements Command {
     private NewsService service;
-
+@Autowired
     public CreateNewsCommand(NewsService service) {
         this.service = service;
     }

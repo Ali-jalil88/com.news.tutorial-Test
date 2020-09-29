@@ -6,6 +6,8 @@ import com.zyadeh.kamel.entities.News;
 import com.zyadeh.kamel.entities.Role;
 import com.zyadeh.kamel.entities.User;
 import com.zyadeh.kamel.exceptions.DAOException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,10 +17,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.zyadeh.kamel.statics.ConstantHolder.*;
-
+@Repository
 public class UserDAO extends Dao<User> {
 
 
+    public UserDAO(JdbcTemplate connection) {
+        super(connection);
+    }
     @Override
     public boolean update(User entity) throws DAOException {
         try (PreparedStatement preparedStatement = connection.prepareStatement(USER_UPDATE)) {

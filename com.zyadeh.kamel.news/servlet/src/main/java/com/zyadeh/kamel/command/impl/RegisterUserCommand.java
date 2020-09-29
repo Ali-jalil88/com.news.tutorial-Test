@@ -6,18 +6,18 @@ import com.zyadeh.kamel.entities.Role;
 import com.zyadeh.kamel.entities.User;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.impl.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 
 import javax.servlet.http.HttpServletRequest;
-
+@Component("")
 public class RegisterUserCommand implements Command {
-
     private UserService userService;
-
+    @Autowired
     public RegisterUserCommand(UserService userService) {
         this.userService = userService;
     }
-
     @Override
     public Page execute(HttpServletRequest req) throws ServiceException {
         Page page = new Page("/pages/login.jsp",true);

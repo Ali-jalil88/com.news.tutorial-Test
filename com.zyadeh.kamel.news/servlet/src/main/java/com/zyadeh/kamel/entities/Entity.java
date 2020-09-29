@@ -1,7 +1,10 @@
 package com.zyadeh.kamel.entities;
 
-import java.util.Objects;
+import org.graalvm.compiler.lir.CompositeValue;
+import org.springframework.stereotype.Component;
 
+import java.util.Objects;
+@Component
 public class Entity {
 
     private int id;
@@ -27,7 +30,9 @@ public class Entity {
 
         return Objects.hash(id);
     }
-
+    public String entity(){
+        return "Hello entity Bean";
+    }
     @Override
     public String toString() {
         return "Entity{" +

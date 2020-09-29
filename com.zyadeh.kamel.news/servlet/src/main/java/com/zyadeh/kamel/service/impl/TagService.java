@@ -5,11 +5,16 @@ import com.zyadeh.kamel.entities.Tag;
 import com.zyadeh.kamel.exceptions.DAOException;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.CRUDService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TagService extends CRUDService<Tag> {
-
-    private TagDAO dao = new TagDAO();
-
+    private TagDAO dao;
+@Autowired
+    public TagService(TagDAO dao) {
+        this.dao = dao;
+    }
     @Override
     public void create(Tag entity) throws ServiceException {
         try {
@@ -18,7 +23,6 @@ public class TagService extends CRUDService<Tag> {
             throw new ServiceException("cants insert this tag");
         }
     }
-
     @Override
     public Tag read(int id) throws ServiceException {
         try {
@@ -27,7 +31,6 @@ public class TagService extends CRUDService<Tag> {
             throw new ServiceException("cant read this tag");
         }
     }
-
     @Override
     public void update(Tag entity) throws ServiceException {
         try {

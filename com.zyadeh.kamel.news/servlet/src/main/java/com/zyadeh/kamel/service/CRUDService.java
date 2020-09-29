@@ -1,10 +1,11 @@
 package com.zyadeh.kamel.service;
 
 import com.zyadeh.kamel.exceptions.ServiceException;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 import java.util.List;
-
+@Service
 public abstract class CRUDService<T> {
 
     public abstract void create(T entity) throws ServiceException;

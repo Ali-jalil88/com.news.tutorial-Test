@@ -5,11 +5,19 @@ import com.zyadeh.kamel.entities.Author;
 import com.zyadeh.kamel.exceptions.DAOException;
 import com.zyadeh.kamel.exceptions.ServiceException;
 import com.zyadeh.kamel.service.CRUDService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+@Service
 public class AuthorService extends CRUDService<Author> {
+    private AuthorDAO dao;
 
-    private AuthorDAO dao = new AuthorDAO();
-
+    @Autowired
+    public AuthorService(AuthorDAO dao) {
+        this.dao = dao;
+    }
     @Override
     public void create(Author entity) throws ServiceException {
         try {

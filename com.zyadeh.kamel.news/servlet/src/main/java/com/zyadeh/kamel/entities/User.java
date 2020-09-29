@@ -1,16 +1,16 @@
 package com.zyadeh.kamel.entities;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Objects;
-
+@Component
 public class User extends Entity{
-
     private String name;
     private String lastName;
     private String login;
     private String password;
     private String email;
     private Role role;
-
     public String getName() {
         return name;
     }
@@ -73,7 +73,9 @@ public class User extends Entity{
 
         return Objects.hash(super.hashCode(), name, lastName, login, password, email, role);
     }
-
+    public String user(){
+        return "Hello user Bean";
+    }
     @Override
     public String toString() {
         return "User{" +

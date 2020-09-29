@@ -1,11 +1,11 @@
 package com.zyadeh.kamel.entities;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Objects;
-
+@Component
 public class Tag extends Entity{
-
     private String name;
-
     public String getName() {
         return name;
     }
@@ -27,7 +27,9 @@ public class Tag extends Entity{
 
         return Objects.hash(super.hashCode(), name);
     }
-
+    public String tag (){
+        return"Hello tag Bean";
+    }
     @Override
     public String toString() {
         return "Tag{" +
