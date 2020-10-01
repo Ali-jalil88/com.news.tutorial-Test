@@ -1,11 +1,7 @@
 package com.zyadeh.kamel.dao.connection;
-
 import org.postgresql.Driver;
-
 import java.sql.*;
-
 public class ConnectionBuilder {
-
     private static Connection connection;
     private static final String url = "jdbc:postgresql://localhost:5432/news";
     private static final String username = "postgres";
@@ -13,7 +9,6 @@ public class ConnectionBuilder {
 
     private ConnectionBuilder() {
     }
-
     static {
         try {
             Class.forName("org.postgresql.Driver");
@@ -23,7 +18,6 @@ public class ConnectionBuilder {
             System.out.println(ex.getMessage());
         }
     }
-
     public static Connection getConnection() {
         return connection;
     }

@@ -12,18 +12,13 @@ import java.sql.SQLException;
 import java.util.List;
 @Repository
 public abstract class Dao<T> {
-    protected JdbcTemplate
-@Autowired
-    public Dao(JdbcTemplate connection) {
-        this.connection = JdbcTemplate.getconnection();
+    protected JdbcTemplate jdbcTemplate;
+    @Autowired
+    public Dao(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
     }
-    public Connection getConnection() {
-        return connection;
-    }
-    public void setConnection(Connection connection) {
-        this.connection = connection;
-    }
-    protected Connection connection = new JdbcTemplate();
+
+    protected Connection connection = (Connection) jdbcTemplate.getDataSource();
 
     public abstract boolean update(T entity) throws DAOException;
 

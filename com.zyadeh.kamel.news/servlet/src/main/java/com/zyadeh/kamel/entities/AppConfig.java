@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
@@ -15,6 +16,11 @@ import java.sql.DriverManager;
 public class AppConfig {
     @Autowired
     Environment environment;
+private JdbcTemplate jdbcTemplate;
+@Autowired
+    public AppConfig(Environment environment) {
+        this.environment = environment;
+    }
 
     private final String URL = "jdbc:postgresql://localhost:5432/news";
     private final String USER = "postgres";
@@ -27,7 +33,7 @@ public class AppConfig {
         driverManagerDataSource.setUsername(environment.getProperty(USER));
         driverManagerDataSource.setPassword(environment.getProperty(PASSWORD));
         driverManagerDataSource.setDriverClassName(environment.getProperty(DRIVER));
-        environment.
+        jdbcTemplate.setDataSource(driverManagerDataSource);
         return driverManagerDataSource;
     }
 }
