@@ -19,8 +19,8 @@ import static com.zyadeh.kamel.statics.ConstantHolder.*;
 @Repository
 public class NewsDAO extends Dao<News> {
 
-    public NewsDAO(JdbcTemplate connection) {
-        super(connection);
+    public NewsDAO(JdbcTemplate jdbcTemplate) {
+        super(jdbcTemplate);
     }
 
     @Override

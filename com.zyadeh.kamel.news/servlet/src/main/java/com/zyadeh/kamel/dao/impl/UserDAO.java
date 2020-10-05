@@ -21,8 +21,8 @@ import static com.zyadeh.kamel.statics.ConstantHolder.*;
 public class UserDAO extends Dao<User> {
 
 
-    public UserDAO(JdbcTemplate connection) {
-        super(connection);
+    public UserDAO(JdbcTemplate jdbcTemplate) {
+        super(jdbcTemplate);
     }
     @Override
     public boolean update(User entity) throws DAOException {

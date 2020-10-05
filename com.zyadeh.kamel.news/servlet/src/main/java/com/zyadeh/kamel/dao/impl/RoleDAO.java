@@ -17,8 +17,8 @@ import static com.zyadeh.kamel.statics.ConstantHolder.*;
 @Repository
 public class RoleDAO extends Dao<Role> {
 
-    public RoleDAO(JdbcTemplate connection) {
-        super(connection);
+    public RoleDAO(JdbcTemplate jdbcTemplate) {
+        super(jdbcTemplate);
     }
 
     @Override

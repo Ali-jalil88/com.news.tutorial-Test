@@ -18,8 +18,8 @@ import static com.zyadeh.kamel.statics.ConstantHolder.*;
 @Repository
 public class TagDAO extends Dao<Tag> {
 
-    public TagDAO(JdbcTemplate connection) {
-        super(connection);
+    public TagDAO(JdbcTemplate jdbcTemplate) {
+        super(jdbcTemplate);
     }
 
     @Override

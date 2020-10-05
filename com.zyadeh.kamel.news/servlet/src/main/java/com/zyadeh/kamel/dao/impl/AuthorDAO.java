@@ -16,9 +16,8 @@ import java.util.List;
 import static com.zyadeh.kamel.statics.ConstantHolder.*;
 @Repository
 public class AuthorDAO extends Dao<Author> {
-
-    public AuthorDAO(JdbcTemplate connection) {
-        super(connection);
+    public AuthorDAO(JdbcTemplate jdbcTemplate) {
+        super(jdbcTemplate);
     }
     @Override
     public boolean update(Author entity) throws DAOException {
