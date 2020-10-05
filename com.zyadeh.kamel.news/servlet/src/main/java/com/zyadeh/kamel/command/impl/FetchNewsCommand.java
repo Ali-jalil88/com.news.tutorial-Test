@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
-@Component("")
+@Component("command_fetch")
 public class FetchNewsCommand implements Command {
     private NewsService newsService;
 @Autowired

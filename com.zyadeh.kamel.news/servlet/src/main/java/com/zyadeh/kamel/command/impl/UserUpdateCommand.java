@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-@Component("")
+@Component("update_user_command")
 public class UserUpdateCommand implements Command
 {
     private UserService service;
@@ -33,11 +33,8 @@ public class UserUpdateCommand implements Command
         user.setEmail(req.getParameter("email"));
         user.setPassword(req.getParameter("password"));
         user.setLogin(req.getParameter("login"));
-
         role.setRole(req.getParameter("role"));
         user.setRole(role);
-
-
         service.update(user);
         return page;
     }

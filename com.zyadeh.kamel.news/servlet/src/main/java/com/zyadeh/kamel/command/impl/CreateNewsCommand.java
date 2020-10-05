@@ -14,7 +14,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-@Component("")
+@Component("create_news_command")
 public class CreateNewsCommand implements Command {
     private NewsService service;
 @Autowired

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
-@Component("home_command")
+@Component("")
 public class HomeCommand implements Command {
     @Autowired
     public HomeCommand() {

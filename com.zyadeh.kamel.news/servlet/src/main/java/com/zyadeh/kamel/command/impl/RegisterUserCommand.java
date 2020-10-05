@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 
 import javax.servlet.http.HttpServletRequest;
-@Component("")
+@Component("command_register")
 public class RegisterUserCommand implements Command {
     private UserService userService;
     @Autowired

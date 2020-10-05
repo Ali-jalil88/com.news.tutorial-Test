@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
-@Component("")
+@Component("selected_news")
 public class SelectedNewsCommand implements Command {
     @Autowired
     public SelectedNewsCommand() {

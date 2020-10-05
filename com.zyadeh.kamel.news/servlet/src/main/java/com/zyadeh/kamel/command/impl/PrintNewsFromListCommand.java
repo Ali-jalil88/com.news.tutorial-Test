@@ -15,7 +15,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Collections;
 import java.util.Locale;
-@Component("")
+@Component("news_print_command")
 public class PrintNewsFromListCommand implements Command {
     @Autowired
     public PrintNewsFromListCommand(NewsService newsService) {

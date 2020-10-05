@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-@Component("")
+@Component("news_update_command")
 public class NewsUpdateCommand implements Command {
     private NewsService service;
 @Autowired

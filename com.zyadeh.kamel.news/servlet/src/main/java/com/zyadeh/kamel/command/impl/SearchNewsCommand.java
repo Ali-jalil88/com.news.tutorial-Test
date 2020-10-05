@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
-@Component("")
+@Component("search_command")
 public class SearchNewsCommand implements Command {
     private final NewsService newsService;
 @Autowired
