@@ -13,6 +13,11 @@ import java.sql.DriverManager;
 public class AppConfig {
     @Autowired
     Environment environment;
+    private JdbcTemplate jdbcTemplate;
+@Bean
+JdbcTemplate jdbcTemplate(){
+    return new JdbcTemplate(dataSource());
+}
 @Autowired
     public AppConfig(Environment environment) {
         this.environment = environment;
@@ -20,7 +25,7 @@ public class AppConfig {
     private final String URL = "jdbc:postgresql://localhost:5432/news";
     private final String USER = "postgres";
     private final String DRIVER = "driver";
-    private final String PASSWORD = "swrali88";
+    private final String PASSWORD = "1234";
     @Bean
     DataSource dataSource() {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
